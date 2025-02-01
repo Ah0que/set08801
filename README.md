@@ -1,2 +1,2 @@
 # set08801
-Web Technology
+Web Technology - BSc in Computing
