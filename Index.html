@@ -1,0 +1,230 @@
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  
+}
+
+.header {
+  text-align: center;
+  padding: 4px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2px;
+  justify-content: center;
+  
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 2px;
+}
+
+.column img {
+  margin-top: 2px;
+  vertical-align: middle;
+  padding:4px;
+ 
+}
+
+.column img:hover {
+  
+  transform: scale(1.2);
+  cursor:hand;
+}
+
+
+
+.zoom {
+    padding: 50px;
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+.navbar {
+  float:center;
+  overflow: hidden;
+  background-color: #333;
+  width:74%;
+  margin: 0 auto;
+  
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.bodycontent {
+  display:flex;
+  flex-flow: row wrap;
+  max-width: 60%;
+  text-align: justify; 
+  min-height: 400px;
+  padding: 2px;
+  margin: 2px;
+  padding-left: 13%;
+  
+} 
+@media (max-width: 800px) {
+  .bodycontent {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .bodycontent {
+    max-width: 100%;
+  }
+}
+
+
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Games for Children</h1>
+  <p>Rules and more</p>
+</div>
+
+<!-- Photo Grid -->
+ 
+<div class="row"> 
+    
+  <div class="column">
+    <img src="Jump_rope_250x200.jpg" style="width:100%">
+    <img src="Hops250x200.jpg" style="width:100%">
+    <img src="Tag_Rugby_250x200.jpg" style="width:100%">
+    <img src="Hide_and_Seek_250x200.jpg" style="width:100%">
+  </div> 
+    
+  <div class="column">  
+    <img src="Jenga_250x200.jpg" style="width:100%;">
+    <img src="BasketBall 250x406.jpg" style="width:100%">
+    <img src="block 250x200.jpg" style="width:100%">  
+  </div>
+  
+  <div class="column">
+    <img src="chess 250x200.jpg" style="width:100%">
+    <img src="Capture_the_flag_250x200.jpg" style="width:100%">
+    <img src="monopoly 250x200.jpg" style="width:100%">
+    <img src="sacrace 250x200.jpg" style="width:100%">
+  </div>
+</div>
+
+<div class="navbar">
+  <a href="#home">About us</a>
+  <a href="#news">Contact Us</a>
+  <a href="#news">Feedback</a>
+  <div class="dropdown">
+    <button class="dropbtn">Games 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Origin</a>
+      <a href="#">Types</a>
+      <a href="#">Rules</a>
+    </div>
+  </div> 
+</div>
+<div class="bodycontent">
+  <h2>Heading</h2>
+  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
+    It has roots in a piece of classical Latin literature from 45 BC,<br> 
+    making it over 2000 years old. Richard McClintock, a Latin professor<br> 
+    at Hampden-Sydney College in Virginia, looked up one of the more<br> 
+    obscure Latin words, consectetur, from a Lorem Ipsum passage,<br> 
+    and going through the cites of the word in classical literature,<br> 
+    discovered the undoubtable source. Lorem Ipsum comes from sections<br> 
+    1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes<br> 
+    of Good and Evil) by Cicero, written in 45 BC. This book is a treatise<br> 
+    on the theory of ethics, very popular during the Renaissance.<br> 
+    The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",<br> 
+    comes from a line in section 1.10.32.</p>
+</div>
+</body>
+</html>

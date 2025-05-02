@@ -1,0 +1,585 @@
+/* Apply box-sizing to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Style for the body */
+body {
+  margin: 0;
+  font-family: Arial;
+  padding: 2em;
+  margin: 0;
+  padding: 20px;
+  justify-content: center; /* Center the form horizontally */
+  align-items: center; /* Center the form vertically */
+}
+
+/* Header styling */
+.header {
+  text-align: center;
+  padding: 4px;
+}
+
+/* Row container for flex layout */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2px;
+  justify-content: center;
+}
+
+/* Column styling for grid layout */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 2px;
+}
+
+/* Image styling inside columns */
+.column img {
+  margin-top: 2px;
+  vertical-align: middle;
+  padding: 4px;
+}
+
+/* Hover effect for images */
+.column img:hover {
+  transform: scale(1.2);
+  cursor: hand;
+  transition-duration: 1s;
+}
+
+/* Zoom effect for specific elements */
+.zoom {
+  padding: 50px;
+  transition: transform 0.2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+/* Navbar styling */
+.navbar {
+  float: center;
+  overflow: hidden;
+  background-color: #e85303;
+  width: 74%;
+  margin: 0 auto;
+}
+
+/* Navbar links styling */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Dropdown menu styling */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button styling */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Hover effect for navbar links and dropdown buttons */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(236, 125, 8);
+  color: black;
+}
+
+/* Dropdown content styling */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Body content styling */
+.bodycontent {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 100%;
+  text-align: justify;
+  min-height: auto;
+  padding: 2px 2px 2px 13%;
+  margin: 2px;
+}
+
+/* Wrapper styling for flex layout */
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Styling for children of wrapper */
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #f38b0e;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: rgb(13, 1, 1);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: rgb(10, 1, 1);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(247, 200, 149);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9d09c;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(52, 21, 21);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Responsive design for small screens */
+@media screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    text-align: center;
+  }
+  .dropdown-content {
+    position: static;
+    width: 100%;
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+    order: 5;
+  }
+  footer > div {
+    margin-bottom: 2px;
+    min-width: 100%;
+  }
+  .copyright {
+    margin-top: 0;
+  }
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .side {
+    flex: 1 0 0;
+  }
+  .header {
+    order: 1;
+  }
+  .lside {
+    order: 2;
+  }
+  .container {
+    order: 3;
+  }
+  .rside {
+    order: 4;
+  }
+  body {
+    padding: 10px;
+  }
+  .frm_container {
+    padding: 20px;
+  }
+  button[type="submit"] {
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+}
+
+/* Sticky header styling */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/* Container styling */
+.container {
+  background-color: rgb(247, 245, 243);
+  text-align: center;
+  max-width: 74%;
+  margin: 0 auto;
+  padding-bottom: 5%;
+  flex: 4 0px;
+}
+
+.Homecontainer {
+  display: flex;
+  background-color: white;
+  width: 74%;
+  margin: 1 auto;
+  padding: 5px;
+  justify-content: center; /* Align items horizontally to the center */
+  align-items: center; /* Align items vertically to the center */
+}
+
+.flex-Homecontainer > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 2px;
+  font-size: 8px;
+  column-gap: 20px;
+  width: 50%;
+  justify-content: space-around;
+}
+
+/* Footer styling */
+.footer {
+  background-color: rgb(111, 147, 178);
+}
+
+/* Top image container styling */
+.top-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Image styling inside top image container */
+.top-image-container img {
+  display: block;
+  margin: 0 auto;
+  width: 74%;
+}
+
+/* Caption styling for top image container */
+.top-image-container figcaption {
+  flex: auto;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+/* Footer styling */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  color: #ccc;
+  padding: 2px;
+  width: 74%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Footer child elements styling */
+footer > div {
+  flex: 1 1 auto;
+  min-width: 200px;
+  margin-bottom: 2px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #f8f4f4;
+}
+
+/* Footer table styling */
+footer table {
+  color: #f8f4f4;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Copyright section styling */
+.copyright {
+  flex: 1 1 100%;
+  text-align: center;
+  font-size: 0.8em;
+  color: #fff; /* Improved contrast for accessibility */
+  margin-top: 20px;
+}
+
+/* Footer links styling */
+footer a {
+  color: #ddd;
+}
+
+/* Hover effect for footer links */
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Slider */
+* {
+  box-sizing: border-box;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 250px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 2px;
+  margin-top: -2px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.frm_container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 100%; /* Full width on small screens */
+  box-sizing: border-box; /* Include padding in width */
+  text-align: left; /* Align content to the center */
+  margin: 20px auto; /* Add gap on the top and center the container horizontally */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Styling for form groups (label + input/textarea) */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block; /* Label on its own line */
+  margin-bottom: 8px;
+  font-weight: 600; /* Semi-bold font */
+  color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%; /* Full width of the frm_container */
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px; /* Rounded corners for inputs */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif; /* Ensure inputs use Inter font */
+}
+
+.form-group textarea {
+  resize: vertical; /* Allow vertical resizing */
+  min-height: 120px; /* Minimum height for textarea */
+}
+
+/* Styling for the submit button */
+button[type="submit"] {
+  display: block; /* Button on its own line */
+  width: 100%; /* Full width button */
+  background-color: #c46e13; /* Primary blue color */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px; /* Rounded corners for button */
+  cursor: pointer; /* Indicate it's clickable */
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+button[type="submit"]:hover {
+  background-color: #904d06; /* Darker blue on hover */
+}
+
+.contact-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align:left ; /* Center text within container */
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.map-container {
+  width: 54%; /* Set width to 74% */
+  overflow: hidden; /* Hide overflow */
+  background-color: #eee; /* Placeholder background */
+  border-radius: 8px; /* Rounded corners for map container */
+  margin: 20px auto; /* Space above the map and center horizontally */
+  text-align: center; /* Center content inside the container */
+}
+
+.map-container iframe {
+  top: 0;
+  left: 0;
+  width: 100%; /* Make iframe fill container width */
+  height: 100%; /* Make iframe fill container height */
+  border: 0; /* Remove default iframe border */
+  border-radius: 8px; /* Rounded corners for iframe */
+}
+
+p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+address {
+  font-style: normal; /* Remove default italic style */
+  margin-top: 20px;
+  color: #333;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="Style_01.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About us</a>
+        <div class="dropdown">
+            <button class="dropbtn">Games 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="jumprope.html">Jump Rope</a>
+                <a href="hoops.html">Hoops</a>
+                <a href="tagrugby.html">Tag Rugby</a>
+                <a href="hideandseek.html">Hide & Seek</a>
+                <a href="jenga.html">Jenga</a>
+                <a href="basketball.html">Basketball</a>
+                <a href="block.html">Blocks</a>
+                <a href="chess.html">Chess</a>
+                <a href="Capture the Flag.html">Capture Flag</a>
+                <a href="monopoly.html">Monopoly</a>
+                <a href="sackrace.html">Sack Race</a>
+            </div>
+        </div> 
+    </div>
+    <div class="frm_container">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <div class="contact-container">
+        <h1>Find Us Here</h1>
+        <p>Visit us at our location below. We look forward to seeing you!</p>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.906723591293!2d-0.1277583842307858!3d51.50735097963494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a0b0a11d1b4b%3A0xfd6e5f1d8c7b8d!2sLondon!5e0!3m2!1sen!2suk!4v1646758987000!5m2!1sen!2suk"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <address>
+            Children's Game<br>
+            123 Business Street<br>
+            City, Postcode<br>
+            United Kingdom
+        </address>
+    </div>
+</body>
+</html>

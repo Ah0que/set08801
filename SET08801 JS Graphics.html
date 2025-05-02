@@ -1,0 +1,32 @@
+<html>
+    <head>
+          <title>SET08801 JS</title>       
+    </head>
+<body>
+    <script>
+       function arc(){
+        const c = document.createElement("canvas"); 
+        const ctx = c.getContext("2d"); 
+        ctx.beginPath(); 
+        ctx.arc(95, 50, 50, 0, 2 * Math.PI); 
+        ctx.stroke(); 
+        document.body.appendChild(c);
+       }
+
+       var context = new (window.AudioContext || window.webkitAudioContext)(); 
+       var oscilator =context.createOscilator(); 
+       oscilator.type='sine'; 
+       oscilator.frequency.value=440; 
+       oscilator.connect(context.destination); 
+       oscilator.start();
+    </script> 
+
+
+    <p><a href="#" onclick =arc()>click</a>   </p>
+
+
+</body>
+
+
+
+</html>
